@@ -8,6 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
       hamburger.classList.toggle('active');
     });
   }
+
+  // Attach SendMail to the contact form if present
+  const contactForm = document.querySelector('.contacts-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      SendMail();
+    });
+  }
 });
 
 function SendMail() {
@@ -26,8 +35,6 @@ function SendMail() {
     emailjs.send("service_5koq38i", "template_uc9hdxs", params)
     .then(function(response) {
         console.log('EmailJS response:', response);
-        // Remove alert and redirect to confirmation page
-        // alert("Message sent successfully! Thank you for contacting us.");
         window.location.href = "../message-sent.html";
     })
     .catch(function(error) {

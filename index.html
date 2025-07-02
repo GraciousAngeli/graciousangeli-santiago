@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Gracious Angeli' Travel & Tours</title>
+  <!-- <base href="/" /> -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="Logo_circle.png" />
+</head>
+<body>
+  <header class="header">
+  <div class="container header-container">
+    <a href="index.html" class="logo">
+      <img src="Logo_circle.png" alt="Gracious Angeli Logo" /> 
+      <span>GRACIOUS ANGELI' TRAVEL & TOURS</span>
+    </a>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about/about.html">About Us</a></li>
+        <li><a href="services/services.html">Services</a></li>
+        <li><a href="partners/partners.html">Partners</a></li>
+        <li><a href="contacts/contacts.html">Contact Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+  <main>
+    <!-- Modern full-screen hero section -->
+  <section class="hero-section destino-hero">
+      <div class="hero-bg-image" style="background: url('frontbg.jpg') center center/cover no-repeat;"></div>
+      <div class="hero-overlay"></div>,
+      <div class="hero-center-content">
+        <img src="Logo_circle.png" alt="Gracious Angeli Logo" class="hero-logo" />
+        <h1 class="destino-headline">Travel the Gracious way</h1>
+        <p class="destino-subheadline">Experience the world with Gracious Angeli' Travel & Tours. Your adventure starts here.</p>
+        <a href="services/services.html" class="btn-primary destino-cta">Explore Services</a>
+      </div>
+    </section>
+    <!-- Welcome section below hero -->
+    <section class="home-gap-filler destino-welcome">
+      <div class="container">
+        <h2>Welcome to Gracious Angeli Travel & Tours</h2>
+        <p class="destino-welcome-text">
+          Your journey begins here! Whether you’re planning a family vacation, a business trip, or a once-in-a-lifetime adventure, our team is dedicated to making your travel dreams come true. Browse our services, discover new destinations, and let us help you create unforgettable memories.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer-placeholder"></footer>
+  <link rel="stylesheet" href="footer.css" />
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+  <script src="script.js"></script>
+  <!-- <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script> -->
+</body>
+</html>

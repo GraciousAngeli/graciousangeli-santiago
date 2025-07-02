@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services - Gracious Angeli' Travel & Tours</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="../Logo_circle.png" />
+  <link rel="stylesheet" href="services_experience_mobile.css" media="(max-width: 768px)" />
+</head>
+<body>
+  <video autoplay loop muted playsinline class="nav-bg-video" style="position:fixed;z-index:-1;width:100vw;height:100vh;object-fit:cover;top:0;left:0;">
+    <source src="../nav_background/Services BG.mp4" type="video/mp4">
+  </video>
+  <header class="header">
+  <div class="container header-container">
+    <a href="../index.html" class="logo">
+      <img src="../Logo_circle.png" alt="Gracious Angeli Logo" /> 
+      <span>GRACIOUS ANGELI' TRAVEL & TOURS</span>
+    </a>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about/about.html">About Us</a></li>
+        <li><a href="../services/services.html" class="active">Services</a></li>
+        <li><a href="../partners/partners.html">Partners</a></li>
+        <li><a href="../contacts/contacts.html">Contact Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+
+  <main>
+    <section class="services-section">
+      <div class="container">
+        <h2 class="services-title">Our Services</h2>
+        <p class="section-intro">
+          At Gracious Angeli' Travel & Tours, we offer a comprehensive range of travel services designed to meet all your travel needs. Whether you're booking flights, planning a cruise, or seeking visa assistance, our expert team is here to help.
+        </p>
+        <div class="services-cards-slider">
+          <div class="service-card glass-card">
+            <video autoplay loop muted playsinline class="service-video">
+              <source src="services_videos/Flight Booking.mp4" type="video/mp4" />
+            </video>
+            <h3>Flight Booking</h3>
+            <p class="service-note">International and Domestic</p>
+          </div>
+          <div class="service-card glass-card">
+            <video autoplay loop muted playsinline class="service-video">
+              <source src="services_videos/Passport & Visa Assistance.mp4" type="video/mp4" />
+            </video>
+            <h3>PSA & Passport Online Assistance</h3>
+          </div>
+          <div class="service-card glass-card">
+            <video autoplay loop muted playsinline class="service-video">
+              <source src="services_videos/Travel Insurance.mp4" type="video/mp4" />
+            </video>
+            <h3>Travel Insurance</h3>
+          </div>
+          <div class="service-card glass-card">
+            <video autoplay loop muted playsinline class="service-video">
+              <source src="services_videos/Study Visa.mp4" type="video/mp4" />
+            </video>
+            <h3>Study Visa</h3>
+          </div>
+          <div class="service-card glass-card">
+            <video autoplay loop muted playsinline class="service-video">
+              <source src="services_videos/Immigrant Visa.mp4" type="video/mp4" />
+            </video>
+            <h3>Immigrant Visa</h3>
+          </div>
+          <div class="service-card glass-card">
+            <img src="services_videos/Skilled Worker Visa.png" alt="Skilled Worker Visa" class="service-image" />
+            <h3>Tourist Visa</h3>
+          </div>
+          <div class="service-card glass-card">
+            <video autoplay loop muted playsinline class="service-video">
+              <source src="services_videos/Package Tour.mp4" type="video/mp4" />
+            </video>
+            <h3>Package Tour</h3>
+            <p class="service-note">International and Domestic</p>
+          </div>
+          <div class="service-card glass-card">
+            <img src="services_videos/Package ToursCruise Tours.jpg" alt="Package Tours/Cruise Tours" class="service-image" />
+            <h3>2GO Ferry Booking</h3>
+          </div>
+          <div class="service-card glass-card">
+            <img src="services_videos/Hotel Booking.png" alt="Booking Assistance" class="service-image" />
+            <h3>Hotel Booking & Reservation</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style>
+      .services-title {
+        color: #003366;
+        font-family: 'Playfair Display', serif;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 1px;
+      }
+      .services-cards-slider {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 2rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 1.5rem;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        justify-content: flex-start;
+      }
+      .service-card {
+        background: #fffbe9;
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+        border: 2px solid #d1e3ef;
+        min-width: 320px;
+        max-width: 90vw;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        scroll-snap-align: start;
+        transition: transform 0.2s, box-shadow 0.2s;
+        padding-bottom: 1rem;
+      }
+      .service-card:hover {
+        transform: translateY(-6px) scale(1.03);
+        box-shadow: 0 8px 32px rgba(0,51,102,0.13);
+      }
+      .service-video, .service-image {
+        width: 90%;
+        max-width: 320px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 12px;
+        background: #e6e6e6;
+        box-shadow: 0 4px 16px rgba(0,51,102,0.10);
+        margin: 2rem 0 1rem 0;
+        display: block;
+      }
+      .service-card h3 {
+        color: #003366;
+        font-weight: 800;
+        font-size: 1.18rem;
+        margin: 0 0 0.5rem 0;
+        letter-spacing: 1px;
+      }
+      .service-note {
+        color: #2d3a4a;
+        font-size: 1rem;
+        margin: 0;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.35);
+        border-radius: 18px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+        border: 1.5px solid rgba(209,227,239,0.35);
+        backdrop-filter: blur(8px) saturate(140%);
+        -webkit-backdrop-filter: blur(8px) saturate(140%);
+        transition: box-shadow 0.2s, transform 0.2s;
+      }
+      .glass-card:hover {
+        box-shadow: 0 8px 32px rgba(0,51,102,0.13);
+        transform: translateY(-6px) scale(1.03);
+      }
+      @media (min-width: 900px) {
+        .services-cards-slider {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2.5rem;
+          overflow-x: visible;
+          justify-content: center;
+          padding-left: 8vw;
+          padding-right: 8vw;
+        }
+        .service-card {
+          min-width: 0;
+          max-width: 100%;
+        }
+      }
+      @media (max-width: 600px) {
+        .service-card {
+          min-width: 85vw;
+          width: 85vw;
+        }
+        .service-video, .service-image {
+          height: 38vw;
+          min-height: 120px;
+        }
+      }
+    </style>
+    <section class="market-section">
+      <div class="container">
+        <div class="main-card" style="background: rgba(245,251,255,0.55); border-radius: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); padding: 2.2rem 2rem 2rem 2rem; margin-bottom: 2.5rem; border: 1.5px solid rgba(209,227,239,0.35); max-width: 100%;">
+          <h2 style="color: #003366; font-family: 'Playfair Display', serif; font-weight: 800; margin-top: 0; margin-bottom: 1.2rem; text-align: left;">Our Market</h2>
+          <p style="color: #222; font-size: 1.08rem; margin-bottom: 1.2rem;">Our target market is the general public, which includes the public and private sector. Corporate booking is very essential for the business to survive. Therefore, our target market are as follows:</p>
+          <ul style="color: #222; font-size: 1.08rem; margin-left: 1.2em;">
+            <li>Corporate (Private Companies) sector of the economy</li>
+            <li>The Public Sector/Government Agencies</li>
+            <li>Civic Organizations</li>
+            <li>Religious Organizations</li>
+            <li>Local NGO's</li>
+            <li>Families/Individuals</li>
+            <li>Social and Professional Organizations</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="experiences-section" style="margin: 2.5rem 0 0 0;">
+    <div class="container">
+      <h2 class="experiences-title">Travel Experiences</h2>
+      <div class="experiences-cards-slider">
+        <div class="experience-card">
+          <div class="experience-media">
+            <video src="../services/services_Experience/Island Hopping.mp4" autoplay loop muted playsinline></video>
+          </div>
+          <div class="experience-info">
+            <h3>Island Hopping Adventures</h3>
+            <p>Explore the hidden gems of the Philippine archipelago.</p>
+          </div>
+        </div>
+        <div class="experience-card">
+          <div class="experience-media">
+            <video src="../services/services_Experience/Mountain_hiking.mp4" autoplay loop muted playsinline></video>
+          </div>
+          <div class="experience-info">
+            <h3>Mountain Trekking Tours</h3>
+            <p>Experience the breathtaking views from the Philippines’ highest peaks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .experiences-title {
+        color: #003366;
+        font-family: 'Playfair Display', serif;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 1px;
+      }
+      .experiences-cards-slider {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 2rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 1.5rem;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        justify-content: flex-start;
+      }
+      .experience-card {
+        background: rgba(255, 255, 255, 0.35);
+        border-radius: 18px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+        border: 1.5px solid rgba(209,227,239,0.35);
+        backdrop-filter: blur(8px) saturate(140%);
+        -webkit-backdrop-filter: blur(8px) saturate(140%);
+        min-width: 320px;
+        max-width: 90vw;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        scroll-snap-align: start;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .experience-card:hover {
+        box-shadow: 0 8px 32px rgba(0,51,102,0.13);
+        transform: translateY(-6px) scale(1.03);
+      }
+      .experience-media {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0 1rem 0;
+      }
+      .experience-media video {
+        width: 90%;
+        max-width: 320px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 12px;
+        background: #e6e6e6;
+        box-shadow: 0 4px 16px rgba(0,51,102,0.10);
+      }
+      .experience-info {
+        padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+        width: 100%;
+      }
+      .experience-info h3 {
+        color: #003366;
+        font-weight: 800;
+        font-size: 1.18rem;
+        margin: 0 0 0.5rem 0;
+        letter-spacing: 1px;
+      }
+      .experience-info p {
+        color: #2d3a4a;
+        font-size: 1rem;
+        margin: 0;
+      }
+      @media (min-width: 900px) {
+        .experiences-cards-slider {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2.5rem;
+          overflow-x: visible;
+          justify-content: center;
+          padding-left: 8vw;
+          padding-right: 8vw;
+        }
+        .experience-card {
+          min-width: 0;
+          max-width: 100%;
+        }
+      }
+      @media (max-width: 600px) {
+        .experience-card {
+          min-width: 85vw;
+          width: 85vw;
+        }
+        .experience-media video {
+          height: 38vw;
+          min-height: 120px;
+        }
+      }
+    </style>
+  </section>
+
+  <footer id="footer-placeholder"></footer>
+  <link rel="stylesheet" href="../footer.css" />
+  <script>
+    fetch('../footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+  <script src="../script.js"></script>
+  <script>
+    fetch('../header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

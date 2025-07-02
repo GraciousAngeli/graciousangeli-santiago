@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About US - Gracious Angeli' Travel & Tours</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="../Logo_circle.png" />
+</head>
+<body class="about-page">
+  <video autoplay loop muted playsinline class="nav-bg-video" style="position:fixed;z-index:-1;width:100vw;height:100vh;object-fit:cover;top:0;left:0;">
+    <source src="../nav_background/About Us BG.mp4" type="video/mp4">
+  </video>
+  <header class="header">
+  <div class="container header-container">
+    <a href="../index.html" class="logo">
+      <img src="../Logo_circle.png" alt="Gracious Angeli Logo" /> 
+      <span>GRACIOUS ANGELI' TRAVEL & TOURS</span>
+    </a>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about/about.html" class="active">About Us</a></li>
+        <li><a href="../services/services.html">Services</a></li>
+        <li><a href="../partners/partners.html">Partners</a></li>
+        <li><a href="../contacts/contacts.html">Contact Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+  <main>
+    <section class="about-section">
+      <div class="container">
+        <h2>About Us</h2>
+        <div class="about-cards">
+          <div class="about-card">
+            <h3>Our Story</h3>
+            <p>
+              Gracious Angeli Travel and Tours is a company with great potential for higher growth and development. Founded in June 1999 and having achieved high standards of development in the tourism industry, it can truly be described as one of the leading travel agencies in the Luzon area. Ms. Judith Balisong Balabag, the general manager and owner of the company, was in charge of the operation for twenty-four (26) years. With these 24 years, she has garnered a lot of working experience to enable her to succeed in her endeavor. When the pandemic ravaged the globe, she has been working on her own and has been able to penetrate into certain fora and platform in this business which she was never aware of, and which are great for this company now.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>Mission and Vision</h3>
+            <p>
+              Gracious Angeli Travel & Tours is committed to providing our clients with affordable and transparent travel experiences, while ensuring that every detail of their itinerary is managed with utmost care. We strongly believe that travel should be accessible to everyone, regardless of budget, and we strive to create itineraries that are both exciting and cost effective.
+            </p>
+            <p>
+              We aim to produce world class travel consultants and become a preferred travel service provider.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="destinations-section" style="margin-top: 2.5rem;">
+      <div class="destinations-slider">
+        <h2 class="destinations-title">Popular Destinations</h2>
+        <div class="destinations-cards-slider">
+          <div class="destination-card glass-card">
+            <div class="destination-media">
+              <video src="about_Videos/Boracay.mp4" autoplay loop muted playsinline></video>
+            </div>
+            <div class="destination-info">
+              <h3>Boracay Island</h3>
+              <p>Famous for its pristine white sand beaches and crystal-clear waters.</p>
+            </div>
+          </div>
+          <div class="destination-card glass-card">
+            <div class="destination-media">
+              <video src="about_Videos/Baguio.mp4" autoplay loop muted playsinline></video>
+            </div>
+            <div class="destination-info">
+              <h3>Baguio City</h3>
+              <p>The Summer Capital of the Philippines, known for its cool climate and scenic views.</p>
+            </div>
+          </div>
+          <div class="destination-card glass-card">
+            <div class="destination-media">
+              <video src="about_Videos/Europe.mp4" autoplay loop muted playsinline></video>
+            </div>
+            <div class="destination-info">
+              <h3>Europe Tour</h3>
+              <p>Experience the rich history, culture, and iconic landmarks of Europe.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style>
+      .destinations-slider {
+        width: 100vw;
+        max-width: 100vw;
+        margin-left: calc(50% - 50vw);
+      }
+      .destinations-title {
+        color: #003366;
+        font-family: 'Playfair Display', serif;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 1px;
+      }
+      .destinations-cards-slider {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 2rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 1.5rem;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        justify-content: flex-start;
+      }
+      .destination-card {
+        background: rgba(255, 255, 255, 0.35);
+        border-radius: 18px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+        border: 1.5px solid rgba(209,227,239,0.35);
+        backdrop-filter: blur(8px) saturate(140%);
+        -webkit-backdrop-filter: blur(8px) saturate(140%);
+        min-width: 320px;
+        max-width: 90vw;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        scroll-snap-align: start;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .destination-card:hover {
+        transform: translateY(-6px) scale(1.03);
+        box-shadow: 0 8px 32px rgba(0,51,102,0.13);
+      }
+      .destination-media {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0 1rem 0;
+      }
+      .destination-media video {
+        width: 90%;
+        max-width: 320px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 12px;
+        background: #e6e6e6;
+        box-shadow: 0 4px 16px rgba(0,51,102,0.10);
+      }
+      .destination-info {
+        padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+        width: 100%;
+      }
+      .destination-info h3 {
+        color: #003366;
+        font-weight: 800;
+        font-size: 1.18rem;
+        margin: 0 0 0.5rem 0;
+        letter-spacing: 1px;
+      }
+      .destination-info p {
+        color: #2d3a4a;
+        font-size: 1rem;
+        margin: 0;
+      }
+      @media (min-width: 900px) {
+        .destinations-cards-slider {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2.5rem;
+          overflow-x: visible;
+          justify-content: center;
+          padding-left: 8vw;
+          padding-right: 8vw;
+        }
+        .destination-card {
+          min-width: 0;
+          max-width: 100%;
+        }
+      }
+      @media (max-width: 600px) {
+        .destination-card {
+          min-width: 85vw;
+          width: 85vw;
+        }
+        .destination-media video {
+          height: 38vw;
+          min-height: 120px;
+        }
+      }
+    </style>
+  </main>
+  <footer id="footer-placeholder"></footer>
+  <link rel="stylesheet" href="../footer.css" />
+  <script>
+    fetch('../footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+  <script src="../script.js"></script>
+</body>
+</html>
